@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "financerag"
+version = "0.1.0"
+description = ""
+authors = ["Artem Strashko <artem.strashko@zapatacomputing.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "financerag" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasets = ">=3.0.0,<3.1.0"
+pydantic = ">=2.9.2,<2.10.0"
+pytrec-eval = ">=0.5,<1.0"
+typing-extensions = ">=4.12.2,<4.13.0"
+numpy = "1.26.4"
+torch = ">=2.2.2,<2.3.0"
+nltk = ">=3.9.1,<3.10.0"
+sentence-transformers = ">=3.1.1,<3.2.0"
+openai = ">=1.47.1,<1.48.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

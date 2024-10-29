@@ -2,12 +2,14 @@
 To begin, install the necessary dependencies:
 
 ```bash
-# Set up a virtual environment
-python -m venv financerag_env
-source financerag_env/bin/activate  # Windows: financerag_env\Scripts\activate
+# 1. Install dependencies from pyproject.toml and poetry.lock
+poetry install
 
-# Install the required packages
-pip install -r requirements.txt
+# 2. Activate the virtual environment
+poetry shell
+
+# 3. (Optional) Check the environment for dependency issues
+poetry check
 ```
 
 ---
